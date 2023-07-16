@@ -1,0 +1,88 @@
+*{
+
+  color: #fff;
+  text-align: center;
+  font-family:'Courier New', Courier, monospace;
+}
+
+:root {
+  font-size: 20px;
+  box-sizing: inherit;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+button{
+  margin: 0;
+  color: black;
+  height: 2rem;
+  width: 10rem;
+  font-size: 20px;
+  margin-bottom: 1.5em;
+  cursor: pointer;
+  text-align: center;
+}
+
+body {
+  font: 1em/1.618 Inter, sans-serif;
+  background-color: #262626;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  padding: 30px;
+}
+
+.card {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 500px;
+  height: 300px;
+  padding: 35px;
+  border: 1px solid rgba(255, 255, 255, .25);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.card-footer {
+  font-size: 0.65em;
+  color: rgb(23, 69, 87);
+}
+
+input {
+  font: 1em/1.618 Inter, sans-serif;
+  color: #000;
+}
+
+#player1name {
+  margin-bottom: 5px;
+}
+
+#game-prep {
+  display: none;
+}
+
+#history {
+  display: none;
+  width: 500px;
+  max-height: 100vh !important;
+  min-height: 80vh !important;
+}
+
+#history > p {
+  text-align: left;
+}
+
+.date-format{
+  font-size: 12px;
+}
