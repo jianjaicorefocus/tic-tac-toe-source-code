@@ -25,7 +25,7 @@ const Board =  ({gameID, setGameStart}) => {
 
   useEffect( () => {
     const fetchData = async () =>{
-      const response = await axios.get(`http://localhost:8082/api/${gameID}`);
+      const response = await axios.get(`http://35.241.100.73/api/${gameID}`);
 
       setGameInfo(response.data);
     }
@@ -77,7 +77,7 @@ const Board =  ({gameID, setGameStart}) => {
   const updateData = (data) => {
 
     console.log(data)
-    axios.put(`http://localhost:8082/api/${gameID}`, {
+    axios.put(`http://35.241.100.73/api/${gameID}`, {
     ...gameInfo, ...data
     }).then((response) => 
       console.log(response)

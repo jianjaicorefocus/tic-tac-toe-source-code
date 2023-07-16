@@ -28,14 +28,16 @@ function App() {
     document.getElementById("mainmenu").style.display = "none";
     document.getElementById("history").style.display = "block";
 
-    const response = await axios.get("http://localhost:8082/api/");
+    const response = await axios.get("http://35.241.100.73/api/", {
+      headers: { "Access-Control-Allow-Origin": "*" },
+    });
 
     setHistory(response.data);
   };
 
   const startGame = (e) => {
     axios
-      .post("http://localhost:8082/api/create-game", {
+      .post("http://35.241.100.73/api/create-game", {
         player1: document.getElementById("player1name").value,
         player2: document.getElementById("player2name").value,
       })
